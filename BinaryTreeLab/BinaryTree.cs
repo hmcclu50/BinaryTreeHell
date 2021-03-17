@@ -108,6 +108,8 @@ namespace BinaryTreeLab
             return result;
         }
 
+        // Balancing functions
+
         private void RotateL(Node gp, Node p, Node c, Node gc)
         {
             if (head == p) head = c;

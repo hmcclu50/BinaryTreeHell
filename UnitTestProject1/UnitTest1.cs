@@ -26,13 +26,16 @@ namespace UnitTestProject1
             bt.Insert(4);
             bt.Insert(6);
             bt.Insert(8);
-            Assert.AreEqual("{5, 3, 7}" + Environment.NewLine + 
+            Assert.AreEqual(
+                "{5, 3, 7}" + Environment.NewLine + 
                 "{3, 2, 4}" + Environment.NewLine + 
                 "{2, , }" + Environment.NewLine +
                 "{4, , }" + Environment.NewLine +
                 "{7, 6, 8}" + Environment.NewLine +
                 "{6, , }" + Environment.NewLine +
-                "{8, , }" + Environment.NewLine, bt.Print());
+                "{8, , }" + Environment.NewLine,
+                bt.Print()
+            );
 
         }
 
@@ -79,8 +82,11 @@ namespace UnitTestProject1
             bt.Insert(3);
             bt.Insert(7);
             bt.Remove(3);
-            Assert.AreEqual("{5, , 7}" + Environment.NewLine +
-                "{7, , }" + Environment.NewLine, bt.Print());
+            Assert.AreEqual(
+                "{5, , 7}" + Environment.NewLine +
+                "{7, , }" + Environment.NewLine,
+                bt.Print()
+            );
         }
 
         [TestMethod]
@@ -92,9 +98,12 @@ namespace UnitTestProject1
             bt.Insert(7);
             bt.Insert(2);
             bt.Remove(3);
-            Assert.AreEqual("{5, 2, 7}" + Environment.NewLine +
+            Assert.AreEqual(
+                "{5, 2, 7}" + Environment.NewLine +
                 "{2, , }" + Environment.NewLine +
-                "{7, , }" + Environment.NewLine, bt.Print());
+                "{7, , }" + Environment.NewLine,
+                bt.Print()
+            );
         }
 
         [TestMethod]
@@ -106,9 +115,12 @@ namespace UnitTestProject1
             bt.Insert(7);
             bt.Insert(4);
             bt.Remove(3);
-            Assert.AreEqual("{5, 4, 7}" + Environment.NewLine +
+            Assert.AreEqual(
+                "{5, 4, 7}" + Environment.NewLine +
                 "{4, , }" + Environment.NewLine +
-                "{7, , }" + Environment.NewLine, bt.Print());
+                "{7, , }" + Environment.NewLine,
+                bt.Print()
+            );
         }
         
         [TestMethod]
@@ -121,10 +133,13 @@ namespace UnitTestProject1
             bt.Insert(2);
             bt.Insert(4);
             bt.Remove(3);
-            Assert.AreEqual("{5, 4, 7}" + Environment.NewLine +
+            Assert.AreEqual(
+                "{5, 4, 7}" + Environment.NewLine +
                 "{4, 2, }" + Environment.NewLine +
                 "{2, , }" + Environment.NewLine +
-                "{7, , }" + Environment.NewLine, bt.Print());
+                "{7, , }" + Environment.NewLine,
+                bt.Print()
+            );
         }
 
         [TestMethod]
@@ -164,8 +179,11 @@ namespace UnitTestProject1
             bt.Insert(3);
             bt.Insert(7);
             bt.Remove(5);
-            Assert.AreEqual("{7, 3, }" + Environment.NewLine +
-                "{3, , }" + Environment.NewLine, bt.Print());
+            Assert.AreEqual(
+                "{7, 3, }" + Environment.NewLine +
+                "{3, , }" + Environment.NewLine,
+                bt.Print()
+            );
         }
     }
 }
